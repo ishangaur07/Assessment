@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+.burger{
+    display: none;
+}
+
+.burger-navbar{
+    display: grid;
+}
+
+.burger i{
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    color: black;
+}
+
+li{
+  align-items: center;
+
+}
+/* Main Section */
+.main-section{
+    background-color: #FAFBFD;
+    position: relative;
+  
+}
+.bg-img{
+    position: absolute;
+    float: right;
+    display: flex;
+    z-index: 1;
+    right: 0;
+}
+.shape-1{
+    text-align: end;
+    float: right;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.navbar ul li a{
+    color: black;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.download-btn{
+    display: flex;
+    align-items: center;
+}
+
+.download-btn button{
+    background-color: #4285F4;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Banner information */
+
+.banner-info{
+    display: flex;
+    justify-content: space-around;
+    margin: 4% auto;
+    align-items: center;
+}
+.text-container{
+    width: 29%;
+}
+.text-container h1{
+    font-size: 44px;
+    font-weight: 700px;
+}
+
+.text-container p{
+    color: #616161;
+}
+.color-span{
+    color: #4285F4;
+}
+
+.text-container button{
+    background-color: #EC5863;
+    color: white;
+    padding: 14px 23px;
+    border: none;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.img-container{    
+    position: relative;
+    z-index: 2;
+}
+
+.watermark{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom:37px;
+}
+
+.icon-play{
+    align-items: center;
+    display: flex;
+}
+.icon-play i{
+    font-size: 40px;
+    padding-right: 10px;
+    color:#4285F4;
+}
+.text-one {
+    color:#B0B0B0;
+    font-size: 16px;
+}
+.text-two{
+    font-size: 13px;
+}
+
+/* About sections */
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 74px auto;
+    align-items: center;
+}
+.text-about{
+    width: 44%;
+    
+}
+.text-about h1{
+    font-size: 44px;
+}
+.text-about p{
+    color: #616161;
+    margin-top: 10px;
+
+}
+.about-button{
+    background-color: #EC5863;
+    padding: 15px 35px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    line-height: 12px;
+    font-size: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 400;
+}
+
+/* Data section */
+.data-section{
+    background-color: #FAFBFD;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    padding-top: 40px;
+}
+
+.doddle-img{
+    position: absolute;
+}
+
+.data-img{
+    position: absolute;
+}
+
+.experts{
+    background-color: #FAFBFD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-expert h1{
+    font-size: 44px;
+}
+
+/* Tips */
+.health-tips{
+    margin-top: 30px;
+}
+.tips-text{
+    text-align: center;
+}
+.tips-text h1{
+    font-size: 44px;
+}
+.tips-text p{
+    color: #616161;
+}
+.img-tp{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 66px;
+}
+.parent{
+    text-align: center;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius:5px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 2;
+}
+.parent img{
+    padding: 30px;
+}
+.parent p{
+    color: #616161;
+    padding: 20px;
+}
+.doodle-me-one{
+    position: absolute;
+    z-index: 1;
+    left: 380px;
+}
+
+.doodle-me-two{
+    position: absolute;
+    z-index: 2;
+
+}
+.footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 722px) {
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .text-container{
+        width: 55%;
+    }
+    .bg-img{
+        display: none;
+    }
+    .banner-info{
+        flex-direction: column;
+
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .data-section{
+        display: none;
+    }
+    .experts{
+        flex-direction: column;
+    }
+    .play{
+        width: 27%;
+    }
+  }
+
+
